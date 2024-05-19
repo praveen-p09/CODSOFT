@@ -1,11 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-</head>
-<body>
-    Hello
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
+    <title>Resume</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar background h-nav-resp">
+      <ul class="navlist v-class-resp">
+        <li id="home-nav-pc">
+          <a href="#home"
+            ><span class="material-symbols-outlined">Home</span></a
+          >
+        </li>
+        <li id="home-nav-resp">
+          <a href="#home">Home</a>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+      <div class="rightnav v-class-resp">
+        <a href="./files/Praveen Chandra Patro Resume 2026.pdf">
+          <button class="btn-small">
+            <i class="fa fa-download"></i> Resume
+          </button></a
+        >
+        <button class="btn-small" onclick="myFunction()">Toggle Theme</button>
+      </div>
+
+      <div class="burger">
+        <div class="burgerline"></div>
+        <div class="burgerline"></div>
+        <div class="burgerline"></div>
+      </div>
+    </nav>
+
+    <section class="background reveal firstSection" id="home">
+      <div class="box-main">
+        <div class="firstHalf typewriter">
+          <h1 class="text-big">Welcome!</h1>
+          <br />
+          <p class="text-small" style="text-align: center">
+            I am Praveen Chandra Patro,<br />CSE undergrad at NIT Raipur
+          </p>
+        </div>
+        <div class="secondHalf fade-in">
+          <img src="files/mypic.jpeg" alt="mypic" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about reveal" id="about">
+      <h2 class="text-big">About</h2>
+      <p class="text-small" style="text-align: justify">
+        My hometown is Raipur. I have completed my schooling from Kendriya
+        Vidyalaya No. 2, Raipur. After JEE 2022, I opted for NIT Raipur to
+        pursue B.Tech. in Computer Science Engineering. I've worked on projects
+        involving Web Development and I'm currently exploring more in this
+        domain. The next thing on my to-do list is to learn basics of cross-
+        platform App Development.
+      </p>
+      <br />
+      <div class="main">
+        <div class="timeline">
+          <h3 class="text-small">Timeline</h3>
+
+          <div class="box">
+            <div class="container">
+              <div class="lines">
+                <div class="dot"></div>
+                <div class="line"></div>
+                <div class="dot"></div>
+                <div class="line"></div>
+              </div>
+
+              <div class="cards">
+                <div class="card">
+                  <h4>2022</h4>
+                  <p>
+                    CPI: 8.71<br />
+                    XII Board: 97.2%<br />JEE Main: AIR 8986<br />JEE Adv: AIR
+                    13532
+                  </p>
+                </div>
+                <div class="card">
+                  <h4>2020</h4>
+                  <p>X Board: 96.4%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <section class="skills reveal" id="skills">
+      <h2 class="text-big">Skills</h2>
+      <p class="text-small">
+        I'm quite proficient in working with the following tech stack :
+      </p>
+      <div class="grid-container">
+        <div class="grid-item fade-in">
+          <img
+            class="floating"
+            src="https://logodix.com/logo/1137946.png"
+            alt="c++"
+          />
+          <p class="text-small">C++</p>
+        </div>
+        <div class="grid-item fade-in">
+          <img
+            class="floating"
+            src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3259806/py-icon-md.png"
+            alt="python"
+          />
+          <p class="text-small">Python</p>
+        </div>
+        <div class="grid-item fade-in">
+          <img
+            class="floating"
+            src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/html5-512.png"
+            alt="html"
+          />
+          <p class="text-small">HTML</p>
+        </div>
+        <div class="grid-item fade-in">
+          <img
+            class="floating"
+            src="https://pnghq.com/wp-content/uploads/css-logo-png-png-no-background-download-50342.png"
+            alt="css"
+          />
+          <p class="text-small">CSS</p>
+        </div>
+        <div class="grid-item fade-in">
+          <img
+            class="floating"
+            src="https://i.pinimg.com/originals/98/0b/a0/980ba07956ccfdf81b5060b1795cdcad.png"
+            alt="Js"
+          />
+          <p class="text-small">Javascript</p>
+        </div>
+        <div class="grid-item fade-in">
+          <img
+            class="floating"
+            src="https://1.bp.blogspot.com/-sqAjIvOtpXI/XYoCmqOyMwI/AAAAAAAAJig/CowR8wgEauEs-RXN2IPmLYkC7NHoHuA3gCLcBGAsYHQ/s1600/node-js-logo.png"
+            alt="NodeJS"
+          />
+          <p class="text-small">NodeJS</p>
+        </div>
+
+        <div class="grid-item fade-in">
+          <img
+            class="floating"
+            src="https://vectorified.com/images/express-js-icon-20.png"
+            alt="Express"
+          />
+          <p class="text-small">Express</p>
+        </div>
+        <div class="grid-item fade-in">
+          <img
+            class="floating"
+            src="https://www.noghtechin.com/cms/wp-content/uploads/2020/02/mongodb-logo-white.png"
+            alt="MongoDB"
+          />
+          <p class="text-small">MongoDB</p>
+        </div>
+        <div class="grid-item fade-in">
+          <img
+            class="floating"
+            src="https://pngimg.com/uploads/mysql/mysql_PNG23.png"
+            alt="MySQL"
+          />
+          <p class="text-small">MySQL</p>
+        </div>
+        <div class="grid-item fade-in">
+          <img
+            class="floating"
+            src="https://1000logos.net/wp-content/uploads/2020/08/Django-Logo-1080x675.png"
+            alt="Django"
+          />
+          <p class="text-small">Django</p>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <section class="projects reveal" id="projects">
+      <h2 class="text-big">Projects</h2>
+      <p class="text-small">Some of my individual/team projects are :</p>
+      <div class="grid-container2">
+        <div class="grid-item fade-in">
+          <a href="https://github.com/praveen-p09/accio-devs/">
+            <img
+              src="https://github.com/praveen-p09/accio-devs/raw/main/images/Main_page.jpg"
+              alt="Pothole Detection (Accio Devs)"
+            />
+          </a>
+          <p class="text-small">Pothole Detection (Accio Devs)</p>
+        </div>
+        <div class="grid-item fade-in">
+          <a href="https://github.com/praveen-p09/hts-agri">
+            <img
+              src="https://private-user-images.githubusercontent.com/128630671/331525263-224ef586-1521-4aff-a31f-eb1c3c912ca4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTU5MzU5MjgsIm5iZiI6MTcxNTkzNTYyOCwicGF0aCI6Ii8xMjg2MzA2NzEvMzMxNTI1MjYzLTIyNGVmNTg2LTE1MjEtNGFmZi1hMzFmLWViMWMzYzkxMmNhNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUxN1QwODQ3MDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xNmQwOTk4NTgzNDViMjY0NzdjZjk2YzUwM2FlMTJiZDE1NDZmOTAxMmZkMGYzYTM2NmMxMTBlOGE1MTk3MmQ5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.m__hKNCG46SH7o1si7ne7-mEh2eF-i0RqHCjZEjtv7k"
+              alt="AgroHub (Code Bandits)"
+            />
+          </a>
+          <p class="text-small">AgroHub (Code Bandits)</p>
+        </div>
+        <div class="grid-item fade-in">
+          <a href="https://github.com/praveen-p09/bmi-calculator">
+            <img
+              src="https://private-user-images.githubusercontent.com/128630671/328863057-c0bed28b-da94-417f-9dab-644c314d388e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTU4ODQwOTQsIm5iZiI6MTcxNTg4Mzc5NCwicGF0aCI6Ii8xMjg2MzA2NzEvMzI4ODYzMDU3LWMwYmVkMjhiLWRhOTQtNDE3Zi05ZGFiLTY0NGMzMTRkMzg4ZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUxNlQxODIzMTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mMWM3ZTdkYTY2NzM1ZWZlOGE4OWRjNjcwZWUzY2M1YTkzZmY4MjJhNmMxZDI4MmI2YWIxMWIxNDliNGZjNzZmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.6QcMVFCWmqKvmWcRObcNYZMBApEhnXJz-GW8ZzvBELw"
+              alt="BMI Calculator"
+            />
+          </a>
+          <p class="text-small">BMI Calculator (native Android)</p>
+        </div>
+        <div class="grid-item fade-in">
+          <a href="https://github.com/praveen-p09/Minesweeper/">
+            <img
+              src="https://private-user-images.githubusercontent.com/128630671/331551261-9e813f19-7770-4c08-9d6f-7aa23cc53c8f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTU5NDA2NzcsIm5iZiI6MTcxNTk0MDM3NywicGF0aCI6Ii8xMjg2MzA2NzEvMzMxNTUxMjYxLTllODEzZjE5LTc3NzAtNGMwOC05ZDZmLTdhYTIzY2M1M2M4Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUxN1QxMDA2MTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00YzU0Y2FiZTE4NWU2Njc0MGRmYTdhMjY5MGNkMTk0ZDQ2ZmNjN2RiYmNkOTNkOTljNGZhYjhkNmZkYzgxNjI2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.7E3WA2kVgpWoDSyPGxIBxa40pTTTqWkzELP6iP6_59M"
+              alt="Minesweeper"
+            />
+          </a>
+          <p class="text-small">Minesweeper</p>
+        </div>
+        <div class="grid-item fade-in">
+          <a href="https://github.com/praveen-p09/video-downloader">
+            <img
+              src="https://private-user-images.githubusercontent.com/128630671/331629026-faa5cd5c-46c1-4662-8cd1-8279691ee8f0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTYxNDMyMzQsIm5iZiI6MTcxNjE0MjkzNCwicGF0aCI6Ii8xMjg2MzA2NzEvMzMxNjI5MDI2LWZhYTVjZDVjLTQ2YzEtNDY2Mi04Y2QxLTgyNzk2OTFlZThmMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTE5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUxOVQxODIyMTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yMjEyZWM1Nzg4YTRiNjVjNDIzZmJiM2Q5ZWZiOWNhZDc3ODVkNWRkNDM4ZGFkODQyOTIxNDk1NDFmYmY5NGZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.nLDH71ErtEe820mRd7afZUodrjYcqH-RiTRC4aGeO08"
+              alt="Video Downloader"
+            />
+          </a>
+          <p class="text-small">Video Downloader</p>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <section class="contact reveal" id="contact">
+      <h2 class="text-big">Contact</h2>
+      <br />
+      <div id="map"></div>
+      <br />
+      <p class="text-small">Let's connect:</p>
+      <br />
+      <span class="contact-links"
+        ><a href="mailto:shrikant.patro999@gmail.com" class="text-small"
+          ><span class="material-symbols-outlined"> alternate_email </span>
+          Email</a
+        ></span
+      ><br />
+      <span class="contact-links">
+        <a
+          href="https://www.instagram.com/praveen_p911/"
+          target="_blank"
+          class="text-small"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+            alt="Error loading image"
+          />
+          Instagram</a
+        ></span
+      ><br />
+      <span class="contact-links">
+        <a
+          href="https://www.linkedin.com/in/praveen-chandra-patro-1a6a5a257/"
+          target="_blank"
+          class="text-small"
+          ><img
+            src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw"
+            alt="Error loading image"
+          />
+          LinkedIn</a
+        ></span
+      ><br />
+
+      <span class="contact-links">
+        <a
+          href="https://github.com/praveen-p09"
+          target="_blank"
+          class="text-small"
+          ><img
+            src="data:image/jpeg;base64,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"
+            alt="Error loading image"
+          />
+          GitHub</a
+        ></span
+      >
+    </section>
+    <hr />
+    <section class="feedback reveal" id="feedback">
+      <h2 class="text-big">Feedback</h2>
+      <div class="formdiv">
+        <form class="feedform" action="/public/index.html" method="POST">
+          <input type="text" class="myInput" name="name" placeholder="Name" />
+          <input
+            type="phone"
+            class="myInput"
+            name="phone"
+            placeholder="Phone"
+          />
+          <input
+            type="email"
+            class="myInput"
+            name="email"
+            placeholder="Email"
+          />
+          <textarea
+            name="desc"
+            class="myInput"
+            cols="60"
+            rows="20"
+            placeholder="Message"
+          ></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      Copyright &copy; 2024 - All rights reserved.<br /><span id="time"></span>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
 </html>

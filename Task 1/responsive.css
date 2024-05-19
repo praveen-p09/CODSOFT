@@ -1,0 +1,245 @@
+@media only screen and (max-width: 1055px) {
+  html {
+    height: 100vh;
+    width: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  #home,
+  section,
+  #feedback {
+    height: calc(var(--vh, 1vh) * 125);
+  }
+
+  .logo {
+    width: 115px;
+    align-self: center;
+    margin: auto;
+  }
+
+  .logo a {
+    height: 100px;
+  }
+
+  .logo img {
+    height: 115px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+    border-radius: 58px;
+  }
+
+  .navlist {
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 120px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+  }
+
+  .navbar ul li {
+    padding: 0;
+    margin: 0;
+    height: 100px;
+
+    display: flex;
+    width: 63%;
+  }
+
+  .navbar ul li:hover {
+    border-radius: 35px;
+  }
+
+  .navbar ul li span {
+    height: 40px;
+  }
+
+  .navbar ul li a {
+    margin: 0px;
+    height: 90px;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+  }
+
+  .navbar {
+    padding-top: 0px;
+    flex-direction: column;
+    transition: all 0.7s ease-out;
+    height: 990px;
+  }
+
+  .rightnav {
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 419px;
+  }
+  .rightnav a {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .btn-small {
+    width: 100%;
+    height: 80px;
+    font-size: 40px;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .h-nav-resp {
+    height: 150px;
+  }
+
+  .v-class-resp {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #home-nav-pc {
+    display: none;
+  }
+
+  #home-nav-resp {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .box-main {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .firstHalf {
+    width: 124%;
+    text-align: justify;
+  }
+
+  .secondHalf {
+    height: 500px;
+    width: 500px;
+    padding: 30px 0px;
+  }
+
+  .secondHalf img {
+    height: 372px;
+    width: 372px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 5 columns */
+    grid-auto-rows: auto; /* Automatically adjust row height */
+    gap: 10px;
+  }
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 5 columns */
+    grid-auto-rows: auto; /* Automatically adjust row height */
+    gap: 10px;
+  }
+
+  #contact {
+    padding: 112px 20px;
+  }
+
+  .about {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .link {
+    width: 120%;
+  }
+
+  .link a {
+    padding: 0;
+  }
+
+  #feedback {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formdiv,
+  .feedform {
+    width: 600px;
+    height: 700px;
+    align-items: center;
+  }
+
+  .myInput {
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .feedform textarea {
+    height: 280px;
+    width: 100%;
+    font-size: 38px;
+  }
+
+  .feedform input,
+  .feedform button {
+    font-size: 38px;
+    height: 100px;
+    width: 100%;
+  }
+
+  .main {
+    height: 344px;
+    width: 500px;
+  }
+
+  .timeline,
+  .box,
+  .container {
+    height: 596px;
+    width: 580px;
+  }
+
+  .line {
+    height: 255px;
+    width: 7px;
+    margin-left: 12.3px;
+  }
+
+  .dot {
+    width: 29px;
+    height: 29px;
+    border-radius: 24px;
+  }
+
+  .card {
+    width: 344px;
+    height: 279px;
+    padding: 30px;
+    margin-bottom: 51px;
+  }
+
+  .card p {
+    font-size: 30px;
+  }
+
+  .card h4 {
+    font-size: 50px;
+  }
+
+  .text-small {
+    font-size: 45px;
+  }
+  .text-big {
+    font-size: 108px;
+  }
+}
